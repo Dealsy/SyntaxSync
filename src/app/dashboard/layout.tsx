@@ -1,16 +1,15 @@
-import DashboardNav from "@/components/dashboard-nav";
+// app/dashboard/layout.js
+import DashboardNav from "@/components/navs/dashboard-nav";
 
-export default function Layout({
+export default function DashboardLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
-    <html lang="en">
-      <body>
-        <DashboardNav />
-        <div>{children}</div>
-      </body>
-    </html>
+    <div>
+      <DashboardNav />
+      <div>{children}</div>
+    </div>
   );
 }

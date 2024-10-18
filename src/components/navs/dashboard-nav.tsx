@@ -4,7 +4,7 @@ import VueLogo from "@/images/vue_logo.png";
 
 export default function DashboardNav() {
   return (
-    <nav className="w-full flex fixed top-0 z-50 mb-4">
+    <nav className="w-full flex z-50 mb-4">
       <div className="w-1/2 bg-[#23272f] flex justify-start items-center p-4">
         <Image
           src={ReactLogo}
